@@ -8,6 +8,11 @@ import App from './App'
 import router from './router'
 {{/router}}
 
+import './assets/js/common/flexible'
+
+import './assets/styles/common/reset.scss'
+import './assets/styles/common/public.scss'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
