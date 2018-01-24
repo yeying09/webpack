@@ -51,6 +51,11 @@ module.exports = {
       type: 'string',
       message: 'Author',
     },
+    wxConfig: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Config Wexin?'
+    },
     build: {
       when: 'isNotTest',
       type: 'list',
@@ -170,6 +175,8 @@ module.exports = {
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
+    'src/mixins/wxMixin.js': 'wxConfig',
+    'src/api/wx.js': 'wxConfig'
   },
   complete: function(data, { chalk }) {
     const green = chalk.green

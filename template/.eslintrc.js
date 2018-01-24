@@ -43,10 +43,12 @@ module.exports = {
   {{/if_eq}}
   // add your custom rules here
   rules: {
+    'brace-style': 'off',
     {{#if_eq lintConfig "standard"}}
     // allow async-await
     'generator-star-spacing': 'off',
     {{/if_eq}}
+    'keyword-spacing': 'off',
     {{#if_eq lintConfig "airbnb"}}
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
@@ -70,10 +72,12 @@ module.exports = {
     {{/if_eq}}
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-useless-escape': 'off',
-    'semi': 'off',
-    'space-before-function-paren': 'off',
     'no-multiple-empty-lines': 'off',
-    'padded-blocks': 'off'
+    'no-useless-escape': 'off',
+    'no-useless-return': 'off',
+    'padded-blocks': 'off',
+    'prefer-promise-reject-errors': 'off',
+    'semi': 'off',
+    'space-before-function-paren': 'off'
   }
 }
