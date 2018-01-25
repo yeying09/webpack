@@ -1,4 +1,4 @@
-import wxApi from '@/api.wx'
+import wxApi from '@/api/wx'
 
 module.exports = {
   data() {
