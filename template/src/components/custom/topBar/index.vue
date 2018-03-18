@@ -30,7 +30,7 @@
     props: {
       title: { // 标题
         type: String,
-        default: $route.meta.name
+        default: ''
       },
       bgColor: { // 全局定义的颜色工具
         type: String,
@@ -55,7 +55,11 @@
       next();
     },
     created() {},
-    mounted() {},
+    mounted() {
+      if(!this.title) {
+        this.title = this.$route.meta.name
+      }
+    },
     computed: {},
     methods: {},
     filters: {},
