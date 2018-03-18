@@ -12,7 +12,7 @@
     <p
       class="top-title text-ellipsis text-center"
       :class="[bgColor? 'text-white font-sans': 'text-'+fColor]">
-      {{title || $route.meta.name}}
+      {{title}}
     </p>
     <div
       class="top-right pos-a"
@@ -28,7 +28,10 @@
     mixins: [],
     components: {},
     props: {
-      title: '',
+      title: { // 标题
+        type: String,
+        default: $route.meta.name
+      },
       bgColor: { // 全局定义的颜色工具
         type: String,
         default: ''
