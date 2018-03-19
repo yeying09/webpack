@@ -1,0 +1,54 @@
+/** 以下是字体和css公共设置 */
+
+/**
+  * 1. Change the default font family in all browsers (opinionated).
+  * 2. Correct the line height in all browsers.
+  * 3. Prevent adjustments of font size after orientation changes in
+  *    IE on Windows Phone and in iOS.
+  */
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "PingFangSC-Thin", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  line-height: 1.2;
+  color: #333;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;/*px*/
+}
+
+/** input placeholder */
+input::-webkit-input-placeholder { /* WebKit browsers*/
+  color: #999;
+}
+
+input:-moz-placeholder {  /* Mozilla Firefox 4 to 18*/
+  color: #999;
+}
+
+input::-moz-placeholder {  /* Mozilla Firefox 19+*/
+  color: #999;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+*/
+  color: #999;
+}

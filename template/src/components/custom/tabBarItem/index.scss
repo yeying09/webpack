@@ -1,0 +1,11 @@
+@import "../../../assets/styles/common/variables";
+
+.tab-iconsvg {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 2px;
+}
+
+.-active {
+  fill: $orange;
+}
