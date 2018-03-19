@@ -43,12 +43,16 @@ module.exports = {
   {{/if_eq}}
   // add your custom rules here
   rules: {
+    'block-spacing': 'off',
     'brace-style': 'off',
+    'comma-spacing': 'off',
+    'eol-last': 'off',
     {{#if_eq lintConfig "standard"}}
     // allow async-await
     'generator-star-spacing': 'off',
     {{/if_eq}}
     'keyword-spacing': 'off',
+    'indent': 'off',
     {{#if_eq lintConfig "airbnb"}}
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
@@ -78,6 +82,9 @@ module.exports = {
     'padded-blocks': 'off',
     'prefer-promise-reject-errors': 'off',
     'semi': 'off',
-    'space-before-function-paren': 'off'
+    'semi-spacing': 'off',
+    'space-before-blocks': 'off',
+    'space-before-function-paren': 'off',
+    'space-infix-ops': 'off'
   }
 }
